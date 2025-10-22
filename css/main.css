@@ -56,12 +56,14 @@ body {
   font-size: 22px;
   padding: 5px 20px;
   color: black;
-  background: #e4e4e4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 #sets {
   color: white;
   background: #5d6328;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-catalogue_categories a:hover {
