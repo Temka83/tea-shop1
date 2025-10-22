@@ -1,0 +1,34 @@
+.main-catalogue_product-button-buy {
+  background: white;
+  border: 1px solid #5d6328;
+  font-size: 20px;
+  padding: 9px 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-catalogue_product-button-buy:hover {
+  background: #d3d3d3;
+}
+
+.main-catalogue_product-button-details {
+  background: #5d6328;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main-catalogue_product-button-details:hover {
+  background: #696e2e;
+}
+
+.main-catalogue_product-details {
+  font-size: 20px;
+}
+
+.main-catalogue_product-card {
+  justify-self: center;
+}

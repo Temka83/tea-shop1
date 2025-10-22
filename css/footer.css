@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 50px;
+  background: #5d6328;
+}
+
+.footer_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.footer_left a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.footer_left a:hover {
+  color: #d3d3d3;
+}
+
+.footer_left ul {
+  list-style-type: none;
+  gap: 3px;
+  display: flex;
+  gap: 20px;
+}
+
+.watermark {
+  color: white;
+  font-size: 20px;
+}
+
+
