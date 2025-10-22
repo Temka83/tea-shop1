@@ -83,7 +83,8 @@ body {
 .main-catalogue_product-bottom {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .main-catalogue_product-bottom p {
