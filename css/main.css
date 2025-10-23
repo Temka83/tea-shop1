@@ -96,11 +96,11 @@ body {
 
 @media (max-width: 960px) {
   .main-hotprice_txt_first {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .main-hotprice_txt_second {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .main-catalogue_product-all {
@@ -158,6 +158,14 @@ body {
   }
 
   .catalogue_product-buttons {
+    font-size: 20px;
+  }
+
+  .main-hotprice_txt_first {
+    font-size: 50px;
+  }
+
+  .main-hotprice_txt_second {
     font-size: 20px;
   }
 }
