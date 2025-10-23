@@ -157,9 +157,6 @@ body {
     gap: 5px;
   }
 
-  .catalogue_product-buttons {
-    font-size: 20px;
-  }
 
   .main-hotprice_txt_first {
     font-size: 50px;
@@ -168,4 +165,9 @@ body {
   .main-hotprice_txt_second {
     font-size: 20px;
   }
+
+  .main-catalogue_product-bottom p {
+    font-size: 20px;
+  }
+
 }
