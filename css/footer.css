@@ -28,9 +28,8 @@
   color: #d3d3d3;
 }
 
-.footer_left ul {
+.footer_ul {
   list-style-type: none;
-  gap: 3px;
   display: flex;
   gap: 20px;
 }
