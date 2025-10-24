@@ -26,3 +26,26 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") popups.forEach(p => p.classList.remove("active"));
   });
 });
+
+const categoryLinks = document.querySelectorAll(".main-catalogue_categories a");
+const productCards = document.querySelectorAll(".main-catalogue_product-card");
+
+categoryLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    categoryLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+
+    const category = link.getAttribute('data-category');
+
+    productCards.forEach(card => {
+      const productCategory = card.getAttribute('data-category');
+      if (category === 'sets' || category === productCategory) {
+        card.classList.remove('hide');
+      } else {
+        card.classList.add('hide');
+      }
+    })
+  })
+})

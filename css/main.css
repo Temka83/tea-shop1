@@ -74,6 +74,11 @@ body {
   transition: 0.3s;
 }
 
+.main-catalogue_categories a.active {
+  background: #5d6328;
+  color: white;
+}
+
 .main-catalogue_product-all {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -169,5 +174,4 @@ body {
   .main-catalogue_product-bottom p {
     font-size: 20px;
   }
-
 }
