@@ -91,3 +91,14 @@
   to { transform: scale(1); opacity: 1; }
 }
 
+.not-allowed {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.main-catalogue_product-card-none {
+  display: none;
+}
