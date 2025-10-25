@@ -52,3 +52,37 @@ document.addEventListener("DOMContentLoaded", () => {
     card.classList.toggle("hide", card.getAttribute("data-category") !== firstCategory);
   });
 });
+
+
+const langSelect = document.querySelector(".header-language_select");
+const elementsToTranslate = document.querySelectorAll("[data-i18n]");
+
+async function loadTranslations(lang) {
+  const response = await fetch("/translations.json");
+  const translations = await response.json();
+
+  elementsToTranslate.forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        el.placeholder = translations[lang][key];
+      } else {
+        el.innerHTML = translations[lang][key];
+      }
+    }
+  });
+}
+
+// При загрузке страницы
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  langSelect.value = savedLang;
+  loadTranslations(savedLang);
+});
+
+// При смене языка
+langSelect.addEventListener("change", (e) => {
+  const selectedLang = e.target.value;
+  localStorage.setItem("lang", selectedLang);
+  loadTranslations(selectedLang);
+});
