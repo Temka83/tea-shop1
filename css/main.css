@@ -20,6 +20,11 @@ footer {
 }
 
 .main-hotprice_img {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.main-hotprice_img img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -141,6 +146,15 @@ footer {
 
 @media (max-width: 460px) {
 
+  .main-hotprice_txt button {
+    margin: 20px;
+  }
+
+  .main-hotprice_img {
+    width: 90%;
+    max-width: none;
+  }
+
   .main-catalogue_categories {
     justify-content: flex-start;
   }
@@ -150,10 +164,12 @@ footer {
   }
 
   .main-hotprice {
-    flex-direction: column;
-    padding-bottom: 20px;
-    align-items: center;
-    justify-content: center;
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
   }
 
   .header-up {
@@ -176,7 +192,7 @@ footer {
   }
 
   #sets {
-    margin-left: 470px;
+    margin-left: 0;
   }
 
   .footer_ul {
@@ -186,10 +202,12 @@ footer {
 
   .main-hotprice_txt_first {
     font-size: 50px;
+    padding-left: 20px;
   }
 
   .main-hotprice_txt_second {
     font-size: 20px;
+    padding-left: 20px;
   }
 
   .main-catalogue_product-bottom p {
