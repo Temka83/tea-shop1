@@ -20,14 +20,8 @@ footer {
 }
 
 .main-hotprice_img {
-  flex: 1 1 300px;
-  max-width: 500px;
-}
-
-.main-hotprice_img img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  display: block;
 }
 
 .main-hotprice_txt {
@@ -150,9 +144,9 @@ footer {
     margin: 20px;
   }
 
-  .main-hotprice_img {
-    width: 90%;
-    max-width: none;
+  .main-hotprice_img img{
+    max-width: 90%;
+    padding-left: 23px;
   }
 
   .main-catalogue_categories {
@@ -199,14 +193,13 @@ footer {
     gap: 5px;
   }
 
-
   .main-hotprice_txt_first {
-    font-size: 50px;
+    font-size: 35px;
     padding-left: 20px;
   }
 
   .main-hotprice_txt_second {
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 20px;
   }
 
