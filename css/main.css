@@ -140,6 +140,11 @@ footer {
 }
 
 @media (max-width: 460px) {
+
+  .main-catalogue_categories {
+    justify-content: flex-start;
+  }
+
   .main-catalogue_product-all {
     grid-template-columns: 1fr;
   }
@@ -147,6 +152,8 @@ footer {
   .main-hotprice {
     flex-direction: column;
     padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
   .header-up {

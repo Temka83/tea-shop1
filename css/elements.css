@@ -162,3 +162,7 @@
   display: block;
   justify-self: center;
 }
+
+.popup-content p {
+  justify-self: center;
+}
