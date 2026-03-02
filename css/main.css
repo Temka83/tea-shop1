@@ -92,7 +92,7 @@ footer {
   color: white;
 }
 
-.main-catalogue_product-all {
+.main-catalogue_product-card-all {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-self: center;
