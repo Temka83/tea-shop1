@@ -43,7 +43,6 @@ body.dark .header-nav_list a {
 body.dark .header-language_select {
   background: #1e1e1e;
   color: #ffffff;
-  border: 2px solid #ffffff;
 }
 
 body.dark .header-language_select option {
