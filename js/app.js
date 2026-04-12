@@ -94,12 +94,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function applyTheme(theme) {
+    const themeColorMeta = document.getElementById("themeColorMeta");
+
     if (theme === "dark") {
+      document.documentElement.classList.add("dark"); // 🔥 важно для Safari
       document.body.classList.add("dark");
+
       if (themeIcon) themeIcon.src = "img/sun.svg";
+      if (themeColorMeta) themeColorMeta.setAttribute("content", "#121212");
     } else {
+      document.documentElement.classList.remove("dark");
       document.body.classList.remove("dark");
+
       if (themeIcon) themeIcon.src = "img/moon.svg";
+      if (themeColorMeta) themeColorMeta.setAttribute("content", "#fafafa");
     }
 
     updateDetailsIcons(theme);

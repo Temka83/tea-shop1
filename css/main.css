@@ -7,6 +7,16 @@ body.dark {
   color: #ffffff;
 }
 
+html,
+body {
+  background: #ffffff;
+}
+
+html.dark,
+body.dark {
+  background: #1f1f1f;
+}
+
 main {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
 }
