@@ -10,11 +10,45 @@ body.dark {
 html,
 body {
   background: #ffffff;
+  color: #000000;
 }
 
 html.dark,
 body.dark {
-  background: #1f1f1f;
+  background: #121212;
+  color: #ffffff;
+}
+
+/* ссылки в header */
+.header-nav_list a {
+  color: #000000;
+}
+
+body.dark .header-nav_list a {
+  color: #ffffff;
+}
+
+/* селект языка */
+.header-language_select {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #2e3f0b;
+}
+
+.header-language_select option {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.dark .header-language_select {
+  background: #1e1e1e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+body.dark .header-language_select option {
+  background: #1e1e1e;
+  color: #ffffff;
 }
 
 main {

@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const themeColorMeta = document.getElementById("themeColorMeta");
 
     if (theme === "dark") {
-      document.documentElement.classList.add("dark"); // 🔥 важно для Safari
+      document.documentElement.classList.add("dark");
       document.body.classList.add("dark");
 
       if (themeIcon) themeIcon.src = "img/sun.svg";
