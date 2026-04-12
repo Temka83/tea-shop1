@@ -4,28 +4,41 @@
   align-items: center;
   padding: 0 20px;
   margin-top: 50px;
-  background: #5d6328;
+  background: white;
+  border-top: 1px solid rgba(55, 55, 55, 0.71);
+}
+
+body.dark .footer {
+  background: #1f1f1f;
 }
 
 .footer_left {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   font-size: 20px;
+}
+
+body.dark .footer_left {
+  color: white;
 }
 
 .footer_left a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 15px;
   padding: 0;
   margin: 0;
   transition: 0.3s;
 }
 
+body.dark .footer_left a {
+  color: white;
+}
+
 .footer_left a:hover {
-  color: #d3d3d3;
+  color: #bab9b9;
 }
 
 .footer_ul {
@@ -35,8 +48,10 @@
 }
 
 .watermark {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
-
+body.dark .watermark {
+  color: white;
+}

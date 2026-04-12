@@ -13,7 +13,8 @@ header {
   justify-content: space-between;
   margin: 0;
   border: 0;
-  padding: 0px 20px;
+  padding: 0 20px;
+  padding-bottom: 10px;
 }
 
 .header-nav_list {
@@ -33,21 +34,42 @@ header {
   font-size: 25px;
 }
 
+body.dark .header-nav_list a {
+  color: white;
+}
+
 .header-nav_list a:hover {
-  color: #2e3f0b;
+  color: #5bad32;
+}
+
+body.dark .header-nav_list a:hover {
+  color: #5bad32;
+}
+
+.header-nav_right {
+  display: flex;
+  gap: 7px;
+  align-items: center;
 }
 
 .header-language_select {
-  border: 2px solid #2e3f0b;
+  border: 2px solid #000000;
   border-radius: 8px;
   cursor: pointer;
   height: 30px;
   font-size: 16px;
-  margin-top: 20px;
+}
+
+body.dark .header-language_select {
+  border: none;
+  background: #1f1f1f;
+  color: white;
 }
 
 .header-language_select option {
-  color: #2e3f0b;
+  color: #000000;
 }
 
-
+body.dark .header-language_select option {
+  color: white;
+}
